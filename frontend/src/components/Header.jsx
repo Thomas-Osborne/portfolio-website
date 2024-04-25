@@ -1,13 +1,49 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
+
+    const standardStyle = "p-2 text-gray-100 hover:font-semibold hover:underline";
+    const activeStyle = "p-2 text-gray-100 font-semibold underline"
+    
     return (
         <header className="bg-orange-400 p-4 flex items-center justify-between">
-            <Link to="/" className="text-gray-100">Home</Link>
+            <NavLink 
+                to="/" 
+                className="text-gray-100 hover:font-semibold hover:underline"
+            >
+                Home
+            </NavLink>
             <nav>
-                <NavLink to="/blog" className="p-2 text-gray-100">Blog</NavLink>
-                <NavLink to="/about" className="p-2 text-gray-100">About</NavLink>
-                <NavLink to="/projects" className="p-2 text-gray-100">Projects</NavLink>
+                <NavLink 
+                    to="/blog"
+                    className={({ isActive }) =>
+                        isActive 
+                            ? activeStyle 
+                            : standardStyle
+                    } 
+                >
+                    Blog
+                </NavLink>
+                <NavLink 
+                    to="/about" 
+                    className={({ isActive }) =>
+                        isActive 
+                            ? activeStyle 
+                            : standardStyle
+                    } 
+                >
+                    About
+                </NavLink>
+                <NavLink 
+                    to="/projects" 
+                    className={({ isActive }) =>
+                        isActive 
+                            ? activeStyle 
+                            : standardStyle
+                    } 
+                >
+                    Projects
+                </NavLink>
             </nav>
         </header>
     )
