@@ -6,7 +6,7 @@ import NotFound from './NotFound';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Blog from '../pages/Blog';
-import Projects from '../pages/Projects';
+import Projects from '../pages/projects/Projects';
 
 export default function App() {
   return (

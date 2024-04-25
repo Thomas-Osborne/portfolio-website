@@ -9,10 +9,12 @@ export default function SiteLayout() {
         <div className="flex flex-col min-h-screen">
             <Header />
             <div className="flex flex-grow">
-                <main className="flex-grow">
-                    <Outlet />
+                <main className="w-3/4 flex-grow">
+                    <div className="p-4">
+                        <Outlet />
+                    </div>
                 </main>
-                <div className="w-1/4 bg-gray-200">
+                <div className="w-1/4 bg-gray-200 flex justify-center items-center">
                     <Contact />
                 </div>
             </div>

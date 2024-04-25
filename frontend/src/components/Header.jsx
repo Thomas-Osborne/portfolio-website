@@ -2,14 +2,14 @@ import { NavLink } from 'react-router-dom';
 
 export default function Header() {
 
-    const standardStyle = "p-2 text-gray-100 hover:font-semibold hover:underline";
-    const activeStyle = "p-2 text-gray-100 font-semibold underline"
-    
+    const standardStyle = "p-2 text-gray-100 font-semibold hover:font-bold hover:underline";
+    const activeStyle = "p-2 text-gray-100 font-bold underline"
+
     return (
-        <header className="bg-orange-400 p-4 flex items-center justify-between">
+        <header className="bg-blue-400 p-4 flex items-center justify-between">
             <NavLink 
                 to="/" 
-                className="text-gray-100 hover:font-semibold hover:underline"
+                className="text-gray-100 font-semibold hover:font-bold hover:underline"
             >
                 Home
             </NavLink>
