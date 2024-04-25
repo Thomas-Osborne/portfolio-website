@@ -13,15 +13,15 @@ export default function ProjectSummary(props) {
     };
 
     return (
-        <div className= "bg-gray-200 rounded-lg p-4 border border-black h-32" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className= "bg-gray-200 rounded-lg p-4 border border-black h-40" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             {isHovered 
             ? (
                 <div>
                     <h3 className="uppercase text-lg font-semibold">{props.project.name}</h3>
-                    <div>
-                        <span>Details</span>
-                        <span>GitHub</span>
-                        <span>Demo</span>
+                    <div className="text-center">
+                        <span className="px-4">Details</span>
+                        <span className="px-4">GitHub</span>
+                        <span className="px-4">Demo</span>
                     </div>
                 </div>
             ) : (

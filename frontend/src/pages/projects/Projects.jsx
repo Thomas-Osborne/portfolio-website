@@ -31,7 +31,7 @@ export default function Projects() {
     const projectElements = (
         <div className="flex flex-wrap">
             {projects.map(project => (
-                <div className="md:w-1/2 px-20 py-4">
+                <div className="md:w-1/2 px-10 py-4">
                     <Link key={project.id} to={project.id}>
                         <ProjectSummary project={project}/>
                     </Link>
