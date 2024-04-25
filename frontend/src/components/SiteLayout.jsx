@@ -1,10 +1,14 @@
-import { Outlet } from "react-router-dom"
+import { Outlet } from 'react-router-dom';
+
+import Header from './Header';
+import Footer from './Footer';
 
 export default function SiteLayout() {
     return (
         <>
-            <h1>Site layout</h1>
+            <Header />
             <Outlet />
+            <Footer />
         </>
     )
 }

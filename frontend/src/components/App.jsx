@@ -11,7 +11,8 @@ import Projects from '../pages/Projects';
 export default function App() {
   return (
     <>
-      <BrowserRouter>
+      <h1 className="testing">Hi</h1>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<SiteLayout />}>
             <Route index element={<Home />} />
@@ -22,7 +23,7 @@ export default function App() {
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   )
 }
