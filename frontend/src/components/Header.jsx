@@ -25,7 +25,7 @@ export default function Header() {
 
     return (
         <header className="bg-blue-400 dark:bg-slate-700 p-4">
-            <div className="w-1/2 mx-auto flex items-center justify-between">
+            <div className="w-3/5 mx-auto flex items-center justify-between">
                 <nav>
                 <NavLink 
                     to="/" 
