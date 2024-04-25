@@ -9,12 +9,12 @@ export default function SiteLayout() {
             <Header />
             <div className="flex justify-center flex-grow">
                 <div className="w-3/5 flex justify-between">
-                    <main className="w-3/4">
+                    <main className="w-2/3">
                         <div className="p-4 bg-white dark:bg-slate-600 dark:text-gray-300">
                             <Outlet />
                         </div>
                     </main>
-                    <div className="bg-gray-200 dark:bg-slate-500 w-1/4">
+                    <div className="bg-gray-200 dark:bg-slate-500 w-1/3">
                         <Contact />
                     </div>
                 </div>
