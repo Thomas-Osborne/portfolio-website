@@ -1,7 +1,7 @@
 export default function Home() {
     return (
         <>
-        <h2>This is the homepage.</h2>
+    <h2 className="py-3 font-semibold text-4xl">Home</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt vitae leo sed eleifend. Nulla consequat tincidunt leo, sit amet tincidunt sem blandit vitae. Sed non sagittis felis, eget lacinia urna. Fusce at lectus tincidunt, finibus massa sed, gravida orci. Maecenas purus dolor, feugiat id lacinia egestas, viverra id metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut faucibus nunc in est vehicula, non viverra ligula dignissim. Cras vehicula nisi id iaculis sodales. Donec varius lectus at porta vulputate. Quisque in enim ac felis feugiat ultricies eget nec lorem. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nibh elit, eleifend nec rutrum ut, tempor et neque. Aenean mi enim, ultricies ultricies tellus id, finibus molestie arcu.
 
 Sed nec ultricies lorem. Nam vitae ex eget velit ultrices tempus eu vel ipsum. Ut lobortis arcu vel malesuada bibendum. Suspendisse convallis elementum ipsum, in sagittis ex dictum a. Donec varius lacinia lectus eget feugiat. Ut consectetur id dui ut lacinia. Etiam fermentum nunc sit amet sapien tristique, nec blandit sapien lacinia. Suspendisse eget arcu metus.

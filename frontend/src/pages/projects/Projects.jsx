@@ -46,7 +46,7 @@ export default function Projects() {
 
     return (
         <>
-            <h2>This is the project page.</h2>
+            <h2 className="py-3 font-semibold text-4xl">Projects</h2>
             {projectElements}
         </>
     )

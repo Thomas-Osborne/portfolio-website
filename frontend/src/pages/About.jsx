@@ -1,5 +1,5 @@
 export default function About() {
     return (
-        <h2>This is the about page.</h2>
+        <h2 className="py-3 font-semibold text-4xl">About</h2>
     )
 }
