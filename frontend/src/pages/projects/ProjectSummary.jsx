@@ -13,7 +13,7 @@ export default function ProjectSummary(props) {
     };
 
     return (
-        <div className= "bg-gray-200 rounded-lg p-4 border border-black" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className= "bg-gray-200 rounded-lg p-4 border border-black h-32" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             {isHovered 
             ? (
                 <div>
