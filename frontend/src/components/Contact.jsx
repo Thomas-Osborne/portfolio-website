@@ -14,7 +14,7 @@ export default function Contact() {
             id: 2,
             university: "University of Bath",
             course: "MSc Computer Science",
-            award: "Ongoing (projected Distinction)",
+            award: "projected Distinction",
             icon: faComputer,
         },
     ]
@@ -34,7 +34,7 @@ export default function Contact() {
                 </div>
             </div>
             <div className="w-1/5 flex items-center justify-center">
-                <div className="w-10 h-10 rounded-full bg-gray-400">
+                <div className="w-10 h-10 rounded-full bg-gray-400 flex items-center justify-center">
                     <FontAwesomeIcon icon={faPlus}/>
                 </div>
             </div>
@@ -45,7 +45,7 @@ export default function Contact() {
         <div className="p-10">
             <div className="container p-4 text-center rounded border bg-blue-400 border-blue-500 dark:bg-slate-600 dark:border-slate-800">
                 <h3 className="pb-2 text-2xl font-semibold">Tom Osborne</h3>
-                <div className="flex justify-center py-2">
+                <div className="flex justify-center py-2 border-red-500 w-full h-full">
                     <img className="rounded-xl w-11/12 h-11/12 hover:w-full hover:h-full" src="../../public/assets/to105.png" />
                 </div>
                 <div>
