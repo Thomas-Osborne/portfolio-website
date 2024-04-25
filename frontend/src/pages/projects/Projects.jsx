@@ -10,21 +10,27 @@ export default function Projects() {
             id: 1,
             description: "Just testing this out.",
             year: 2024,
-            text: "Blah blah blah. Lorem ipsum dolor."
+            text: "Blah blah blah. Lorem ipsum dolor.",
+            github: "https://www.google.com",
+            demo: "https://www.itv.com",
         },
         {
             name: "Project Time",
             id: 2,
             description: "Some more basic text.",
             year: 2022,
-            text: "This is a slightly different piece of text."
+            text: "This is a slightly different piece of text.",
+            github: "https://www.example.com",
+            demo: "https://www.reddit.com",
         },
         {
             name: "#3 Project",
             id: 3,
             description: "Can we do it?!",
             year: 2023,
-            text: "Wahoooo!"
+            text: "Wahoooo!",
+            github: "https://www.bbc.com",
+            demo: "https://www.hello.com",
         }
     ]
 
@@ -32,9 +38,7 @@ export default function Projects() {
         <div className="flex flex-wrap">
             {projects.map(project => (
                 <div className="md:w-1/2 px-10 py-4">
-                    <Link key={project.id} to={project.id}>
-                        <ProjectSummary project={project}/>
-                    </Link>
+                    <ProjectSummary key={project.id} project={project}/>
                 </div>
             ))}
         </div>

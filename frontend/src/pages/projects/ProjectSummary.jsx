@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function ProjectSummary(props) {
 
@@ -12,16 +13,22 @@ export default function ProjectSummary(props) {
         setIsHovered(false);
     };
 
+    if (isHovered) {
+        console.log(props.project.id);
+    }
+    
     return (
-        <div className= "bg-gray-200 rounded-lg p-4 border border-black h-40" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className= "bg-gray-200 rounded-lg p-4 border border-black h-60" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             {isHovered 
             ? (
                 <div>
                     <h3 className="uppercase text-lg font-semibold">{props.project.name}</h3>
                     <div className="text-center">
-                        <span className="px-4">Details</span>
-                        <span className="px-4">GitHub</span>
-                        <span className="px-4">Demo</span>
+                        <Link to={props.project.id}>
+                            <span className="px-4">Details</span>
+                        </Link>
+                        <span className="px-4"><a href={props.project.github} target="_blank">GitHub</a></span>
+                        <span className="px-4"><a href={props.project.demo} target="_blank">Demo</a></span>
                     </div>
                 </div>
             ) : (
