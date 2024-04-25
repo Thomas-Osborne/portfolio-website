@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import ProjectSummary from './ProjectSummary';
 
 export default function Projects() {
@@ -29,7 +31,9 @@ export default function Projects() {
     const projectElements = (
         <div className="flex flex-wrap">
             {projects.map(project => (
-                <ProjectSummary key={project.id} project={project}/>
+                <Link key={project.id} to={project.id} className="md:w-1/2 px-20 py-4">
+                    <ProjectSummary project={project}/>
+                </Link>
             ))}
         </div>
     );

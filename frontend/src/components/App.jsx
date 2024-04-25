@@ -7,6 +7,7 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import Blog from '../pages/Blog';
 import Projects from '../pages/projects/Projects';
+import ProjectInfo from '../pages/projects/ProjectInfo';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
             <Route path="about" element={<About />} />
             <Route path="blog" element={<Blog />} />
             <Route path="projects" element={<Projects />} />
+            <Route path="projects/:id" element={<ProjectInfo />} />
 
             <Route path="*" element={<NotFound />} />
           </Route>
