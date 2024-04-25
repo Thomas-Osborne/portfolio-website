@@ -24,62 +24,64 @@ export default function Header() {
     const activeStyle = "p-2 text-gray-100 font-bold hover:underline"
 
     return (
-        <header className="bg-blue-400 dark:bg-slate-700 p-4 flex items-center justify-between">
-            <nav>
-            <NavLink 
-                to="/" 
-                className={({ isActive }) =>
-                isActive 
-                    ? activeStyle 
-                    : standardStyle
-                } 
-            >
-                Home
-            </NavLink>
+        <header className="bg-blue-400 dark:bg-slate-700 p-4">
+            <div className="w-1/2 mx-auto flex items-center justify-between">
+                <nav>
                 <NavLink 
-                    to="/blog"
+                    to="/" 
                     className={({ isActive }) =>
-                        isActive 
-                            ? activeStyle 
-                            : standardStyle
+                    isActive 
+                        ? activeStyle 
+                        : standardStyle
                     } 
                 >
-                    Blog
+                    Home
                 </NavLink>
-                <NavLink 
-                    to="/about" 
-                    className={({ isActive }) =>
-                        isActive 
-                            ? activeStyle 
-                            : standardStyle
-                    } 
-                >
-                    About
-                </NavLink>
-                <NavLink 
-                    to="/projects" 
-                    className={({ isActive }) =>
-                        isActive 
-                            ? activeStyle 
-                            : standardStyle
-                    } 
-                >
-                    Projects
-                </NavLink>
-            </nav>
-            <div>
-                {Links.map(link =>
-                    <a className="p-2" key={link.key} href={link.link} target="_blank">
-                        <button className="text-black hover:transform hover:rotate-12 transition-transform duration-200"><FontAwesomeIcon icon={link.icon} size="2x"/></button>
-                    </a>
-                )}
-                <button 
-                    className="p-2 text-black hover:transform hover:rotate-12 transition-transform duration-200"
-                    onClick={toggleDarkMode}    
-                >{darkMode 
-                    ? <FontAwesomeIcon icon={faSun} size="2x"/>
-                    : <FontAwesomeIcon icon={faMoon} size="2x"/>
-                }</button>
+                    <NavLink 
+                        to="/blog"
+                        className={({ isActive }) =>
+                            isActive 
+                                ? activeStyle 
+                                : standardStyle
+                        } 
+                    >
+                        Blog
+                    </NavLink>
+                    <NavLink 
+                        to="/about" 
+                        className={({ isActive }) =>
+                            isActive 
+                                ? activeStyle 
+                                : standardStyle
+                        } 
+                    >
+                        About
+                    </NavLink>
+                    <NavLink 
+                        to="/projects" 
+                        className={({ isActive }) =>
+                            isActive 
+                                ? activeStyle 
+                                : standardStyle
+                        } 
+                    >
+                        Projects
+                    </NavLink>
+                </nav>
+                <div>
+                    {Links.map(link =>
+                        <a className="p-2" key={link.key} href={link.link} target="_blank">
+                            <button className="text-black hover:transform hover:rotate-12 transition-transform duration-200"><FontAwesomeIcon icon={link.icon} size="2x"/></button>
+                        </a>
+                    )}
+                    <button 
+                        className="p-2 text-black hover:transform hover:rotate-12 transition-transform duration-200"
+                        onClick={toggleDarkMode}    
+                    >{darkMode 
+                        ? <FontAwesomeIcon icon={faSun} size="2x"/>
+                        : <FontAwesomeIcon icon={faMoon} size="2x"/>
+                    }</button>
+                </div>
             </div>
         </header>
     )
