@@ -21,8 +21,8 @@ export default function Header() {
         {link: 'mailto: thomas.m.osborne.2@gmail.com', icon:faEnvelope, key: 'Email'}
     ];
 
-    const standardStyle = "px-2 py-3 text-gray-100 font-semibold rounded hover:bg-blue-500 dark:hover:bg-slate-600";
-    const activeStyle = "px-2 py-3 text-gray-100 font-bold rounded bg-blue-600 hover:bg-blue-500 dark:bg-slate-800 dark:hover:bg-slate-600"
+    const standardStyle = "px-3 mx-1 py-3 text-gray-100 font-semibold rounded hover:bg-blue-500 dark:hover:bg-slate-600";
+    const activeStyle = "px-2 mx-1 py-3 text-gray-100 font-bold rounded bg-blue-600 hover:bg-blue-500 dark:bg-slate-800 dark:hover:bg-slate-600"
 
     return (
         <header className="sticky top-0 z-50 bg-blue-400 dark:bg-slate-700 py-2">
