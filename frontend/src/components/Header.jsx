@@ -25,8 +25,8 @@ export default function Header() {
 
     return (
         <header className="bg-blue-400 dark:bg-slate-700 p-4">
-            <div className="w-3/5 mx-auto flex items-center justify-between">
-                <nav>
+            <div className="w-3/5 mx-auto flex flex-col md:flex-row items-center justify-between">
+                <nav className="py-2">
                 <NavLink 
                     to="/" 
                     className={({ isActive }) =>
@@ -68,19 +68,18 @@ export default function Header() {
                         Projects
                     </NavLink>
                 </nav>
-                <div>
+                <div className="py-2">
                     {Links.map(link =>
                         <a className="p-2" key={link.key} href={link.link} target="_blank">
-                            <button className="text-black hover:transform hover:rotate-12 transition-transform duration-200"><FontAwesomeIcon icon={link.icon} size="2x"/></button>
+                            <button className="text-black text-xl md:text-3xl hover:transform hover:rotate-12 transition-transform duration-200"><FontAwesomeIcon icon={link.icon}/></button>
                         </a>
                     )}
                     <button 
-                        className="p-2 text-black hover:transform hover:rotate-12 transition-transform duration-200"
+                        className="p-2 text-xl md:text-3xl text-black hover:transform hover:rotate-12 transition-transform duration-200"
                         onClick={toggleDarkMode}    
-                    >{darkMode 
-                        ? <FontAwesomeIcon icon={faSun} size="2x"/>
-                        : <FontAwesomeIcon icon={faMoon} size="2x"/>
-                    }</button>
+                    >
+                        <FontAwesomeIcon icon={darkMode ? faSun : faMoon}/>
+                    </button>
                 </div>
             </div>
         </header>
