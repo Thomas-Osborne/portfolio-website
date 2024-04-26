@@ -8,6 +8,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 export default function Header() {
 
     const [darkMode, setDarkMode] = useState(false);
+    const [mobile, setMobile] = useState(false);
 
     function toggleDarkMode() {
         setDarkMode(prevDarkMode => !prevDarkMode);
@@ -24,7 +25,7 @@ export default function Header() {
     const activeStyle = "px-2 py-3 text-gray-100 font-bold rounded bg-blue-600 hover:bg-blue-500 dark:bg-slate-800 dark:hover:bg-slate-600"
 
     return (
-        <header className="sticky top-0 z-50 bg-blue-400 dark:bg-slate-700">
+        <header className="sticky top-0 z-50 bg-blue-400 dark:bg-slate-700 py-2">
             <div className="w-3/5 mx-auto flex flex-col md:flex-row items-center justify-between">
                 <nav className="py-2">
                 <NavLink 
