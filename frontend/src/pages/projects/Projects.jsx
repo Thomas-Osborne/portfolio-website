@@ -13,6 +13,7 @@ export default function Projects() {
             text: "Blah blah blah. Lorem ipsum dolor.",
             github: "https://www.google.com",
             demo: "https://www.itv.com",
+            background: "/assets/word-game.png",
         },
         {
             name: "Project Time",
@@ -22,6 +23,7 @@ export default function Projects() {
             text: "This is a slightly different piece of text.",
             github: "https://www.example.com",
             demo: "https://www.reddit.com",
+            background: "/assets/word-game.png",
         },
         {
             name: "#3 Project",
@@ -31,13 +33,14 @@ export default function Projects() {
             text: "Wahoooo!",
             github: "https://www.bbc.com",
             demo: "https://www.hello.com",
+            background: "/assets/word-game.png",
         }
     ]
 
     const projectElements = (
         <div className="flex flex-wrap">
             {projects.map(project => (
-                <div className="md:w-1/2 px-10 py-4">
+                <div key={project.id} className="md:w-1/2 px-10 py-4">
                     <ProjectSummary key={project.id} project={project}/>
                 </div>
             ))}

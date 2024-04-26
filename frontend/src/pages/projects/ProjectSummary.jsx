@@ -14,11 +14,15 @@ export default function ProjectSummary(props) {
     };
 
     if (isHovered) {
-        console.log(props.project.id);
+        console.log(props.project.background);
     }
     
+    
     return (
-        <div className= "h-60 p-4 border rounded-lg bg-gray-200 border-black dark:bg-slate-500 dark:border-slate-700" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div 
+            className= "h-60 p-4 border rounded-lg bg-gray-200 border-black dark:bg-slate-500 dark:border-slate-700 bg-cover bg-center"
+            style={{backgroundImage: `url(${props.project.background})`}} 
+            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             {isHovered 
             ? (
                 <div>

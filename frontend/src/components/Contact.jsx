@@ -9,7 +9,7 @@ export default function Contact() {
             university: "University of Warwick",
             course: "MMath Mathematics",
             award: "First Class Honours",
-            logo: "../../assets/warwick.png",
+            logo: "/assets/warwick.png",
             icon: faCalculator,
             description: "Graduated from the University of Warwick with a First Class Honours in Mathematics. Specialisms in algebra and number theory.",
             grades: [
@@ -38,7 +38,7 @@ export default function Contact() {
             university: "University of Bath",
             course: "MSc Computer Science",
             award: "projected Distinction",
-            logo: "../../assets/bath.png",
+            logo: "/assets/bath.png",
             icon: faComputer,
             description: "Undergoing a remote MSc in Computer Science from the University of Bath. Modules include Artificial Intelligence, Functional Programming and Human Computer Interaction.",
             grades: [
