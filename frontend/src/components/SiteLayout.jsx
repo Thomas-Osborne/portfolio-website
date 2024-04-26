@@ -10,7 +10,7 @@ export default function SiteLayout() {
             <div className="flex justify-center flex-grow">
                 <div className="w-3/5 flex justify-between">
                     <main className="w-2/3">
-                        <div className="p-4 bg-white dark:bg-slate-600 dark:text-gray-300">
+                        <div className="p-4 bg-white dark:bg-slate-600 dark:text-gray-300 h-full">
                             <Outlet />
                         </div>
                     </main>
