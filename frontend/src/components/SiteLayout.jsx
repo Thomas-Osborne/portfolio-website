@@ -14,7 +14,7 @@ export default function SiteLayout() {
                             <Outlet />
                         </div>
                     </main>
-                    <div className="flex justify-center w-full md:w-1/3 border border-red-500 bg-gray-200 dark:bg-slate-500">
+                    <div className="flex justify-center md:w-1/3 bg-gray-200 dark:bg-slate-500">
                         <Contact />
                     </div>
                 </div>

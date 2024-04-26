@@ -5,14 +5,14 @@ import { useState } from 'react';
 export default function CourseInfo(props) {
     const [isOpen, setIsOpen] = useState(false);
 
-    function toggleCollapse() {
+    function toggleCollapse(event) {
         setIsOpen(prevIsOpen => !prevIsOpen);
     }
 
     return (
-        <div className="flex lg:flex-col rounded py-2 my-2 bg-gray-300 dark:bg-slate-500">
+        <div className="flex flex-col rounded py-2 my-2 bg-gray-300 dark:bg-slate-500">
             <div className="flex py-2">
-                <div>
+                <div className="w-full">
                     <div className="flex">
                         <div className="w-4/5 flex px-2 items-center text-left">
                             <FontAwesomeIcon icon={props.info.icon} className="px-2"/>
@@ -27,12 +27,12 @@ export default function CourseInfo(props) {
                         </button>
                     </div>
                 </div>
-                    <div className="flex justify-between px-2">
-                        <div className="flex text-left items-center">
+                    <div className="flex flex-col lg:flex-row justify-between px-2 items-center">
+                        <div className="flex lg:text-left items-center">
                             <img src={props.info.logo} className="w-10 h-10 rounded-full" alt={props.info.university}/>
                             <h6 className="text-sm font-semibold px-1">{props.info.university}</h6>
                         </div>
-                        <h6 className="text-right italic text-sm px-1">{props.info.award}</h6>
+                        <h6 className="lg:text-right italic text-sm px-1">{props.info.award}</h6>
                     </div>
                 </div>
             </div>

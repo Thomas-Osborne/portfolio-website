@@ -73,11 +73,11 @@ export default function Contact() {
     ))
 
     return (
-        <div className="p-10">
-            <div className="container p-4 text-center rounded border bg-blue-400 border-blue-500 dark:bg-slate-600 dark:border-slate-800">
+        <div className="p-10 border">
+            <div className="p-4 text-center rounded border bg-blue-400 border-blue-500 dark:bg-slate-600 dark:border-slate-800">
                 <h3 className="pb-2 text-2xl font-semibold">Tom Osborne</h3>
-                <div className="flex justify-center py-2 border-red-500 w-full h-full">
-                    <img className="rounded-xl w-full h-full" src="../../assets/to105.png" />
+                <div className="flex justify-center py-2 w-full h-full">
+                    <img className="rounded-xl w-2/3 h-2/3" src="../../assets/to105.png" />
                 </div>
                 <div>
                     {achievementsElements}
