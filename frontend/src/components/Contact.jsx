@@ -1,5 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalculator, faComputer, faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faCalculator, faComputer } from '@fortawesome/free-solid-svg-icons'
+
+import CourseInfo from './CourseInfo';
 
 export default function Contact() {
     const achievements = [
@@ -9,6 +10,25 @@ export default function Contact() {
             course: "MMath Mathematics",
             award: "First Class Honours",
             icon: faCalculator,
+            description: "Graduated from the University of Warwick with a First Class Honours in Mathematics. Specialised in algebra and number theory.",
+            grades: [
+                {
+                    name: "1st Year",
+                    score: "80%",
+                },
+                {
+                    name: "2nd Year Score",
+                    score: "84%",
+                },
+                {
+                    name: "3rd Year",
+                    score: "90%",
+                },
+                {
+                    name: "4th Year",
+                    score: "84%",
+                }
+            ]
         },
         {
             id: 2,
@@ -16,29 +36,34 @@ export default function Contact() {
             course: "MSc Computer Science",
             award: "projected Distinction",
             icon: faComputer,
+            description: "Graduated from the University of Warwick with a First Class Honours in Mathematics. Specialisms in algebra and number theory.",
+            grades: [
+                {
+                    name: "Principles of Programming",
+                    score: "94",
+                },
+                {
+                    name: "Software Engineering I",
+                    score: "70%",
+                },
+                {
+                    name: "Foundations of Computation",
+                    score: "99%",
+                },
+                {
+                    name: "Software Engineering II",
+                    score: "TBC",
+                },
+                {
+                    name: "Database and Cloud",
+                    score: "ongoing",
+                }
+            ]
         },
     ]
 
-    console.log(achievements);
-
     const achievementsElements = achievements.map(achievement => (
-        <div className="flex rounded py-2 my-2 bg-gray-300 dark:bg-slate-500">
-            <div className="w-4/5">
-                <div className="flex px-2 items-center justify-center">
-                    <FontAwesomeIcon icon={achievement.icon} className="px-2"/>
-                    <h5 className="font-semibold text-md">{achievement.course}</h5>
-                </div>
-                <div className="flex justify-between px-2">
-                    <h6 className="text-sm font-semibold px-1">{achievement.university}</h6>
-                    <h6 className="italic text-sm px-1">{achievement.award}</h6>
-                </div>
-            </div>
-            <div className="w-1/5 flex items-center justify-center">
-                <div className="w-10 h-10 rounded-full bg-gray-400 flex items-center justify-center">
-                    <FontAwesomeIcon icon={faPlus}/>
-                </div>
-            </div>
-        </div>
+        <CourseInfo info={achievement} key={achievement.id}/>
     ))
 
     return (
