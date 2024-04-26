@@ -24,7 +24,7 @@ export default function Header() {
     const activeStyle = "px-2 py-3 text-gray-100 font-bold rounded bg-blue-600 hover:bg-blue-500 dark:bg-slate-800 dark:hover:bg-slate-600"
 
     return (
-        <header className="bg-blue-400 dark:bg-slate-700 p-4">
+        <header className="sticky top-0 z-50 bg-blue-400 dark:bg-slate-700">
             <div className="w-3/5 mx-auto flex flex-col md:flex-row items-center justify-between">
                 <nav className="py-2">
                 <NavLink 
