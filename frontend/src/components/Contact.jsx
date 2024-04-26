@@ -10,14 +10,14 @@ export default function Contact() {
             course: "MMath Mathematics",
             award: "First Class Honours",
             icon: faCalculator,
-            description: "Graduated from the University of Warwick with a First Class Honours in Mathematics. Specialised in algebra and number theory.",
+            description: "Graduated from the University of Warwick with a First Class Honours in Mathematics. Specialisms in algebra and number theory.",
             grades: [
                 {
                     name: "1st Year",
                     score: "80%",
                 },
                 {
-                    name: "2nd Year Score",
+                    name: "2nd Year",
                     score: "84%",
                 },
                 {
@@ -28,7 +28,9 @@ export default function Contact() {
                     name: "4th Year",
                     score: "84%",
                 }
-            ]
+            ],
+            overall: "85%",
+            ongoing: false,
         },
         {
             id: 2,
@@ -36,11 +38,11 @@ export default function Contact() {
             course: "MSc Computer Science",
             award: "projected Distinction",
             icon: faComputer,
-            description: "Graduated from the University of Warwick with a First Class Honours in Mathematics. Specialisms in algebra and number theory.",
+            description: "Undergoing a remote MSc in Computer Science from the University of Bath. Modules include xx yy zz",
             grades: [
                 {
                     name: "Principles of Programming",
-                    score: "94",
+                    score: "94%",
                 },
                 {
                     name: "Software Engineering I",
@@ -58,7 +60,9 @@ export default function Contact() {
                     name: "Database and Cloud",
                     score: "ongoing",
                 }
-            ]
+            ],
+            overall: "88%",
+            ongoing: true,
         },
     ]
 
@@ -71,7 +75,7 @@ export default function Contact() {
             <div className="container p-4 text-center rounded border bg-blue-400 border-blue-500 dark:bg-slate-600 dark:border-slate-800">
                 <h3 className="pb-2 text-2xl font-semibold">Tom Osborne</h3>
                 <div className="flex justify-center py-2 border-red-500 w-full h-full">
-                    <img className="rounded-xl w-11/12 h-11/12 hover:w-full hover:h-full" src="../../public/assets/to105.png" />
+                    <img className="rounded-xl w-11/12 h-11/12 hover:w-full hover:h-full" src="../../assets/to105.png" />
                 </div>
                 <div>
                     {achievementsElements}
