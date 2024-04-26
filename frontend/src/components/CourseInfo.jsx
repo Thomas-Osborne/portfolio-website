@@ -33,8 +33,11 @@ export default function CourseInfo(props) {
                         <h5 className="font-semibold text-md">{props.info.course}</h5>
                     </div>
                     <div className="flex justify-between px-2">
-                        <h6 className="text-sm font-semibold px-1">{props.info.university}</h6>
-                        <h6 className="italic text-sm px-1">{props.info.award}</h6>
+                        <div className="flex text-left items-center">
+                            <img src={props.info.logo} className="w-10 h-10 rounded-full"/>
+                            <h6 className="text-sm font-semibold px-1">{props.info.university}</h6>
+                        </div>
+                        <h6 className="text-right italic text-sm px-1">{props.info.award}</h6>
                     </div>
                 </div>
                 <div className="w-1/5 flex items-center justify-center">
@@ -56,7 +59,7 @@ export default function CourseInfo(props) {
                     </div>
                     <div className="flex justify-between items-center">
                         <h6 className="text-md font-bold pr-1">Overall</h6>
-                        <h6 className="italic text-sm pl-1">{props.info.overall} {props.info.ongoing && "(ongoing)"}</h6>
+                        <h6 className="italic text-sm pl-1">{props.info.overall} {props.info.ongoing && "(currently)"}</h6>
                     </div>
                 </div>
                 
