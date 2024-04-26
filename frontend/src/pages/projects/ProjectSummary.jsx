@@ -12,11 +12,7 @@ export default function ProjectSummary(props) {
     const handleMouseLeave = () => {
         setIsHovered(false);
     };
-
-    if (isHovered) {
-        console.log(props.project.background);
-    }
-    
+  
     
     return (
         <div 
@@ -24,7 +20,8 @@ export default function ProjectSummary(props) {
             style={{
                 backgroundImage: `url(${props.project.background})`,
                 filter: isHovered ? 'none' : 'grayscale(100%)',
-                border: isHovered ? '4px solid red' : '2px solid black'
+                border: isHovered ? '4px solid red' : '2px solid black',
+                transition: 'filter 0.1s ease-in-out'
             }} 
             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             {isHovered 
