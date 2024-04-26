@@ -5,7 +5,7 @@ const Links = [
 ];
 
 const linkElements = Links.map(link => (
-    <a className="px-2 hover:underline" href={link.link}>{link.key}</a>
+    <a className="px-2 hover:underline hover:text-gray-600 dark:hover:text-slate-300" href={link.link}>{link.key}</a>
 ))
 export default function Footer() {
     return (
