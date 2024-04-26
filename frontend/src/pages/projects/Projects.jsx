@@ -38,9 +38,9 @@ export default function Projects() {
     ]
 
     const projectElements = (
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap flex-col lg:flex-row">
             {projects.map(project => (
-                <div key={project.id} className="md:w-1/2 px-10 py-4">
+                <div key={project.id} className="xl:w-1/2 px-10 py-4">
                     <ProjectSummary key={project.id} project={project}/>
                 </div>
             ))}
