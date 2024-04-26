@@ -1,11 +1,9 @@
-const Links = [
-    {link: 'mailto: thomas.m.osborne.2@gmail.com', key: 'Email me!'},
-    {link: 'https://www.linkedin.com/in/tom-osborne-716619288/', key: 'LinkedIn'},
-    {link: 'https://www.github.com/Thomas-Osborne', key: 'GitHub'},
-];
+import { getLinks } from '../data';
 
-const linkElements = Links.map(link => (
-    <a className="px-2 hover:underline hover:text-gray-600 dark:hover:text-slate-300" href={link.link}>{link.key}</a>
+const links = getLinks();
+
+const linkElements = links.map(link => (
+    <a className="px-2 hover:underline hover:text-gray-600 dark:hover:text-slate-300" href={link.link} key={link.name}>{link.name}</a>
 ))
 export default function Footer() {
     return (

@@ -2,8 +2,9 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
+
+import { getLinks } from '../data';
 
 export default function Header() {
 
@@ -15,11 +16,7 @@ export default function Header() {
         document.body.classList.toggle("dark"); // update the dark value in tailwind config file
     }
 
-    const Links = [
-        {link: 'https://www.github.com/Thomas-Osborne', icon: faGithub, key: 'GitHub'},
-        {link: 'https://www.linkedin.com/in/tom-osborne-716619288/', icon: faLinkedin, key: 'LinkedIn'},
-        {link: 'mailto: thomas.m.osborne.2@gmail.com', icon:faEnvelope, key: 'Email'}
-    ];
+    const links = getLinks();
 
     const standardStyle = "px-3 mx-1 py-3 text-gray-100 font-semibold rounded hover:bg-blue-500 dark:hover:bg-slate-600";
     const activeStyle = "px-2 mx-1 py-3 text-gray-100 font-bold rounded bg-blue-600 hover:bg-blue-500 dark:bg-slate-800 dark:hover:bg-slate-600"
@@ -70,8 +67,8 @@ export default function Header() {
                     </NavLink>
                 </nav>
                 <div className="py-2">
-                    {Links.map(link =>
-                        <a className="p-2" key={link.key} href={link.link} target="_blank">
+                    {links.map(link =>
+                        <a className="p-2" key={link.name} href={link.link} target="_blank">
                             <button className="text-black text-xl md:text-3xl hover:transform hover:rotate-12 transition-transform duration-200"><FontAwesomeIcon icon={link.icon}/></button>
                         </a>
                     )}
