@@ -18,14 +18,14 @@ export default function CourseInfo(props) {
     }
 
     const gradeElements = props.info.grades.map(grade => (
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center py-1">
             <h6 className="text-sm font-semibold pr-1">{grade.name}</h6>
             <h6 className="italic text-sm pl-1">{grade.score}</h6>
         </div>
     ));
 
     return (
-        <div className="flex flex-col rounded py-2 my-2 bg-gray-300 dark:bg-slate-500">
+        <div className="flex lg:flex-col rounded py-2 my-2 bg-gray-300 dark:bg-slate-500">
             <div className="flex py-2">
                 <div className="w-4/5">
                     <div className="flex px-2 items-center justify-center">
@@ -51,7 +51,7 @@ export default function CourseInfo(props) {
             </div>
             {isOpen && 
                 <div className={`px-3 py-2 w-full`}>
-                    <div className="py-2 text-left border-y border-y-black">
+                    <div className="py-2 text-left border-y border-y-black text-sm">
                         {props.info.description}
                     </div>
                     <div className="py-2 flex flex-col">
@@ -59,7 +59,7 @@ export default function CourseInfo(props) {
                     </div>
                     <div className="flex justify-between items-center">
                         <h6 className="text-md font-bold pr-1">Overall</h6>
-                        <h6 className="italic text-sm pl-1">{props.info.overall} {props.info.ongoing && "(currently)"}</h6>
+                        <h6 className="italic text-sm pl-1"><span className="font-bold">{props.info.overall}</span> {props.info.ongoing && "(currently)"}</h6>
                     </div>
                 </div>
                 

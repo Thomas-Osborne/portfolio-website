@@ -40,7 +40,7 @@ export default function Contact() {
             award: "projected Distinction",
             logo: "../../assets/bath.png",
             icon: faComputer,
-            description: "Undergoing a remote MSc in Computer Science from the University of Bath. Modules include xx yy zz",
+            description: "Undergoing a remote MSc in Computer Science from the University of Bath. Modules include Artificial Intelligence, Functional Programming and Human Computer Interaction.",
             grades: [
                 {
                     name: "Principles of Programming",
