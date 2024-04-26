@@ -21,7 +21,10 @@ export default function ProjectSummary(props) {
     return (
         <div 
             className= "h-60 p-4 border rounded-lg bg-gray-200 border-black dark:bg-slate-500 dark:border-slate-700 bg-cover bg-center"
-            style={{backgroundImage: `url(${props.project.background})`}} 
+            style={{
+                backgroundImage: `url(${props.project.background})`,
+                filter: isHovered ? 'none' : 'grayscale(100%)',
+            }} 
             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             {isHovered 
             ? (
