@@ -52,6 +52,36 @@ const projects = [
     }
 ]
 
+const blogs = [
+    {
+        title: "The first blog",
+        id: 1,
+        author: "Tom Osborne",
+        description: "My first blog post.",
+        content: "This is an example blog post. I hope you like it!",
+        createdAt: "2024-04-24T10:30:00Z",
+        updatedAt: "2024-04-24T10:30:00Z"
+    },
+    {
+        title: "What a great blog!",
+        id: 1,
+        author: "Tom Osborne",
+        description: "What's inside? Who knows?",
+        content: "It's not that interesting, I'm afraid.",
+        createdAt: "2024-04-25T12:30:00Z",
+        updatedAt: "2024-04-25T14:30:00Z"
+    },
+    {
+        title: "Blog: The latest",
+        id: 3,
+        author: "Tom Osborne",
+        description: "This should appear at the top!",
+        content: "Yay!",
+        createdAt: "2024-04-27T00:00:00Z",
+        updatedAt: "2024-04-27T10:00:00Z"
+    },
+]
+
 function getLinks() {
     return links;
 }
@@ -60,4 +90,8 @@ function getProjects() {
     return projects;
 }
 
-export { getLinks, getProjects }
+function getBlogs() {
+    return blogs;
+}
+
+export { getLinks, getProjects, getBlogs }

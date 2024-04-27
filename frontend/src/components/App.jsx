@@ -5,7 +5,7 @@ import NotFound from './NotFound';
 
 import Home from '../pages/Home';
 import About from '../pages/About';
-import Blog from '../pages/Blog';
+import Blog from '../pages/blog/Blog';
 import Projects from '../pages/projects/Projects';
 import ProjectInfo from '../pages/projects/ProjectInfo';
 
