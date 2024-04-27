@@ -15,7 +15,7 @@ export default function BlogSummary(props) {
             <div className="flex justify-end">
                 <Link to={props.blog.id}>
                     <button 
-                        className="px-4 py-2 my-4 rounded-lg text-white bg-blue-400 hover:bg-blue-500 dark:bg-slate-600 dark:hover:bg-slate-500"
+                        className="px-4 py-2 my-4 rounded-lg text-white font-semibold bg-blue-400 hover:bg-blue-500 dark:bg-slate-600 dark:hover:bg-slate-500"
                     >
                         Read more
                     </button>

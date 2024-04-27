@@ -64,7 +64,7 @@ const blogs = [
     },
     {
         title: "What a great blog!",
-        id: 1,
+        id: 2,
         author: "Tom Osborne",
         description: "What's inside? Who knows?",
         content: "It's not that interesting, I'm afraid.",
