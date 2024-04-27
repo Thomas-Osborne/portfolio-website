@@ -29,6 +29,7 @@ const projects = [
         github: "https://www.google.com",
         demo: "https://www.itv.com",
         background: "/assets/word-game.png",
+        content: "Words?! Words."
     },
     {
         name: "Project Time",
@@ -39,6 +40,7 @@ const projects = [
         github: "https://www.example.com",
         demo: "https://www.reddit.com",
         background: "/assets/word-game.png",
+        content: "Yes yes yes"
     },
     {
         name: "#3 Project",
@@ -49,6 +51,7 @@ const projects = [
         github: "https://www.bbc.com",
         demo: "https://www.hello.com",
         background: "/assets/word-game.png",
+        content: "Lorem ipsum dolor"
     }
 ]
 
